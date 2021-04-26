@@ -1,7 +1,7 @@
 name: form_validator
 description: A new Flutter package for validating users inputs.
-version: 0.0.1
-author: HabeexDev <habeeb.shola@lyshnia.com>, JayCode <vsquare396@gmail.com>
+version: 0.1.0
+# author: HabeexDev <habeeb.shola@lyshnia.com>, JayCode <vsquare396@gmail.com>
 homepage: https://github.com/jbankz/FormValidator.git
 
 environment:
