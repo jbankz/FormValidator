@@ -59,12 +59,17 @@ class Validators {
   }
 
   /// validates users input to email address
+  static final _pattern = r'^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$';
+  static final _regExp = RegExp(_pattern);
   static String Function(String) validateEmail({String error}) {
     return (String value) {
       if (value.isEmpty) {
         return error ?? 'Enter a valid email address';
       }
       if (!value.contains('@')) {
+        return error ?? 'Not a valid email.';
+      }
+      if (!_regExp.hasMatch(value)) {
         return error ?? 'Not a valid email.';
       }
       return null;
